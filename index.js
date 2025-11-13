@@ -58,7 +58,8 @@ function calcularRaizQuadrada(numero){
 };
 
 function calcularHipotenusa(cateto1, cateto2){
-  let result = Math.sqrt((Math.pow(cateto1, 2) + Math.pow(cateto2, 2)));
+  let soma_quadrados = somar(elevarPotencia(cateto1, 2), elevarPotencia(cateto2, 2))
+  let result = calcularRaizQuadrada(soma_quadrados);
   return result
 }
 
